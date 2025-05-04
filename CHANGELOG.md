@@ -1,3 +1,11 @@
+## 0.3.4+1
+
+- Update Dart SDK to latest version compatible with Flutter
+- Update dependencies to latest versions
+- Only compatible with `crypto_keys` [version `0.3.0+2` from this fork](https://github.com/afpaz/crypto_keys)
+- Only compatible with `x509` [version `0.2.4+3` from this fork](https://github.com/afpaz/x509)
+
+
 ## 0.3.4
 
  - **FEAT**: Support latest `package:http` ([#50](https://github.com/appsup-dart/jose/pull/50))
@@ -20,7 +28,7 @@
 ## 0.3.1
 
 - JsonWebKey.parsePem handles CERTIFICATE
-- `DefaultJsonWebKeySetLoader`: if possible, use HTTP headers to determine cache expiration. 
+- `DefaultJsonWebKeySetLoader`: if possible, use HTTP headers to determine cache expiration.
 
 ## 0.3.0
 
@@ -38,7 +46,7 @@
 - Added JsonWebKey constructors for creating EC and RSA keys
 - Added factory constructor for creating a JsonWebKey from crypto keys
 - Added factory constructor for creating a JsonWebKey from a pem string
-- Support for P-256K curve 
+- Support for P-256K curve
 
 ## 0.2.0
 
@@ -47,8 +55,8 @@
 - JsonWebAlgorithm class
 - Generating random non-symmetric keys
 - cryptoKeyPair getter on JsonWebKey returning a `KeyPair` from `crypto_keys` package
-- **Breaking Change**: loading jwk set from `package` or `file` url no longer supported by default. The new class 
-`JsonWebKeySetLoader` can be used to override this behavior or manage the way jwk sets are loaded from an url. 
+- **Breaking Change**: loading jwk set from `package` or `file` url no longer supported by default. The new class
+`JsonWebKeySetLoader` can be used to override this behavior or manage the way jwk sets are loaded from an url.
 
 ## 0.1.2
 
@@ -56,9 +64,9 @@
 
 ## 0.1.1
 
-- Fix security issue: JWS with algorithm `none` was previously verified, 
-now you can specify which algorithms are allowed and by default `none` is 
-not allowed.  
+- Fix security issue: JWS with algorithm `none` was previously verified,
+now you can specify which algorithms are allowed and by default `none` is
+not allowed.
 
 ## 0.1.0
 
