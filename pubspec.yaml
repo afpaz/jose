@@ -4,18 +4,20 @@ version: 0.3.4+1
 homepage: https://github.com/appsup-dart/jose
 funding:
  - https://github.com/sponsors/rbellens
-
+publish_to: none
 
 environment:
   sdk: ^3.7.2
 
 dependencies:
   crypto_keys:
-    path: ../crypto_keys/
+    git:
+      url: https://github.com/afpaz/crypto_keys
   meta: ^1.16.0
   typed_data: ^1.4.0
   x509:
-    path: ../x509/
+    git:
+      url: https://github.com/afpaz/x509
   http: '>=0.13.0 <2.0.0'
   http_parser: ^4.1.2
   asn1lib: ^1.6.4
